@@ -1,3 +1,4 @@
+FROM ubuntu:latest AS Scraper
 MAINTAINER noalauwers1
 COPY . . 
 RUN apt-get update && apt-get install -y git
@@ -12,3 +13,4 @@ RUN pip3 install pymongo
 RUN pip3 install redis
 RUN pip3 install time
 RUN cp "webscraper/Scraper.py"
+RUN python3 scraper.py

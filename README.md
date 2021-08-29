@@ -31,8 +31,6 @@ Create network:
 "docker network create {networkName}"
 
 Add containers: 
-docker network connect {networkName} {containerName}
-
 
 
 

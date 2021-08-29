@@ -12,6 +12,8 @@ Note that mongodb.py includes the Redis part of the assignment
 
 Next, download the dockerfiles from this repository., dit zijn jouw images
 
+Dockerhub link for images: "https://hub.docker.com/repository/docker/noalauwers1/scraper/general"
+
 Also rename Scraper & mongodb in Dockerfiles each to "Dockerfile" and put them in a directory, these directories you launch with terminal and build/push to dockerhub
 
 In your terminal you do: 

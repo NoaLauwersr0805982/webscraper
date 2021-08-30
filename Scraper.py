@@ -8,7 +8,7 @@ import redis as redis
 def RedisCatcher(elemlist1):
     scraper_df = pd.DataFrame(elemlist1, columns=['Hash', 'Time', 'Bitcoin', 'US Dollar'])
 
-    red = redis.Redis(host='7e34fc00a7da',port=6379, db=0)
+    red = redis.Redis(host='test',port=6379, db=0)
 
     red.set('scraperdf', scraper_df.to_json())
     

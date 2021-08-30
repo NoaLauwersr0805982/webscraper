@@ -5,7 +5,7 @@ import time as t
 
 
 def GetRedis():
-    red = redis.Redis(host='7e34fc00a7da',port=6379, db=0)
+    red = redis.Redis(host='test',port=6379, db=0)
     redi = red.get('scraperdf')
     redii = pd.read_json(redi)
     rediii = redii.sort_values(by = ['US Dollar'], ascending = False).head(1)
